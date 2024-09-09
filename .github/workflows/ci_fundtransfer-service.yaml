@@ -16,4 +16,4 @@ jobs:
       - run: | 
          cp -r fundtransfer-service/src ./src
          cp fundtransfer-service/pom.xml .
-         mvn clean-install -U    
+         mvn clean install -U    
