@@ -13,6 +13,7 @@ jobs:
         with:
           java-version: 17
           distribution: microsoft
-      - run: cp fundtransfer-service/src ./src
-      - run: cp fundtransfer-service/pom.xml ,
-      - run: mvn clean-install -U    
+      - run: | 
+         cp -r fundtransfer-service/src ./src
+         cp fundtransfer-service/pom.xml .
+         mvn clean-install -U    
