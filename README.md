@@ -5,6 +5,8 @@
 Simple Bank Transfer
 
 ## Modules
-<ul>
+<ol>
   <li> Fund Transfer Service</li>
-</ul>
+  <li> Charges Service</li>
+  <li> Payment Service Discovery</li>
+</ol>
