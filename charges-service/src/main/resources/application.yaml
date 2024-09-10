@@ -26,5 +26,16 @@ logging:
   level:
     root: info
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+  endpoint:
+    health:
+      show:
+        details: always
+
 cors:
   origin: ${CORS_ORIGIN:*}
