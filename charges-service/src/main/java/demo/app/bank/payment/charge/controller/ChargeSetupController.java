@@ -4,6 +4,7 @@ import demo.app.bank.payment.charge.exception.DuplicateChargeEntryException;
 import demo.app.bank.payment.charge.exception.NoSuchChargeException;
 import demo.app.bank.payment.charge.model.dto.ChargeDTO;
 import demo.app.bank.payment.charge.service.ChargeSetupService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -30,12 +31,12 @@ public class ChargeSetupController {
   }
 
   @PostMapping
-  public void newCharge(@RequestBody ChargeDTO chargeDTO) throws DuplicateChargeEntryException {
+  public void newCharge(@RequestBody @Valid ChargeDTO chargeDTO) throws DuplicateChargeEntryException {
     chargeSetupService.newCharge(chargeDTO);
   }
 
   @PutMapping("/{chargeId}")
-  public void updateCharge(@PathVariable("chargeId") Long chargeId, @RequestBody ChargeDTO modfiedChargeDTO) throws NoSuchChargeException {
+  public void updateCharge(@PathVariable("chargeId") Long chargeId, @RequestBody @Valid ChargeDTO modfiedChargeDTO) throws NoSuchChargeException {
     chargeSetupService.updateCharge(chargeId, modfiedChargeDTO);
   }
 

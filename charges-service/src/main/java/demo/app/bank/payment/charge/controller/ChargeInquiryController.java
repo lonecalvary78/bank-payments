@@ -1,6 +1,5 @@
 package demo.app.bank.payment.charge.controller;
 
-import demo.app.bank.payment.charge.domain.Charge;
 import demo.app.bank.payment.charge.exception.NoSuchChargeException;
 import demo.app.bank.payment.charge.model.dto.ChargeDTO;
 import demo.app.bank.payment.charge.service.ChargeInquiryService;
