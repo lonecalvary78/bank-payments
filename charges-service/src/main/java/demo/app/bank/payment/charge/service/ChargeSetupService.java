@@ -1,6 +1,5 @@
 package demo.app.bank.payment.charge.service;
 
-import demo.app.bank.payment.charge.domain.Charge;
 import demo.app.bank.payment.charge.domain.ChargeRepository;
 import demo.app.bank.payment.charge.exception.DuplicateChargeEntryException;
 import demo.app.bank.payment.charge.exception.NoSuchChargeException;
