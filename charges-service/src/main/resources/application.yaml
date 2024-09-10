@@ -1,0 +1,21 @@
+server:
+  port: ${CHARGE_SVC_PORT:8181}
+
+spring:
+  application:
+    name: charges-service
+  datasource:
+    url: jdbc:postgres:${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  main:
+    banner-mode: off
+
+cors:
+  origin: ${CORS_ORIGIN:*}
