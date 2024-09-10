@@ -19,6 +19,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <developers>
+        <developer>
+            <name>Gunardy Sutanto(Гунарді Сутанто)</name>
+            <email>lonecalvary78.de@gmail.com</email>
+            <timezone>Asia/Jakarta</timezone>
+            <roles>
+                <role>developer</role>
+                <role>maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
